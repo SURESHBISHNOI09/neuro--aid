@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroAid® Technologies - AI-Powered Voice Health Platform</title>
+    <meta name="description" content="Democratizing neurological health through AI-powered voice analysis. Detect early signs of neurological conditions with 94% accuracy in just 30 seconds.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>NeuroAid<sup>®</sup></h1>
+                    <span class="tagline">AI-Powered Voice Health Platform</span>
+                </div>
+                
+                <nav class="nav" id="main-nav">
+                    <div class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#platform" class="nav-link">Platform</a>
+                        <div class="dropdown-menu">
+                            <a href="#detect" class="dropdown-link">Detect</a>
+                            <a href="#connect" class="dropdown-link">Connect</a>
+                            <a href="#personalize" class="dropdown-link">Personalize</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#careers" class="nav-link">Careers</a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#resources" class="nav-link">Resources</a>
+                        <div class="dropdown-menu">
+                            <a href="#resources" class="dropdown-link">Blog</a>
+                            <a href="#contact" class="dropdown-link">Contact</a>
+                            <a href="#trademark" class="dropdown-link">Legal</a>
+                        </div>
+                    </div>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+                    <button class="btn btn--outline" onclick="showPage('demo')">Try Demo</button>
+                    <button class="btn btn--primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Homepage -->
+        <div id="home-page" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-grid">
+                        <div class="hero-content">
+                            <div class="hero-badge">
+                                <span>🏆 Healthcare Innovation Award 2024</span>
+                            </div>
+                            <h1>Democratizing Neurological Health Through AI</h1>
+                            <p class="hero-description">Advanced voice analysis technology that detects early signs of neurological conditions with 94% accuracy in just 30 seconds. Join 10,000+ users already improving their health outcomes.</p>
+                            <div class="hero-actions">
+                                <button class="btn btn--primary btn--lg" onclick="showPage('demo')">
+                                    <span>Try Free Demo</span>
+                                    <span class="btn-icon">▶️</span>
+                                </button>
+                                <button class="btn btn--outline btn--lg" onclick="showPage('platform')">
+                                    <span>Learn More</span>
+                                </button>
+                            </div>
+                            <div class="hero-stats">
+                                <div class="stat">
+                                    <div class="stat-number">10,000+</div>
+                                    <div class="stat-label">Active Users</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">50,000+</div>
+                                    <div class="stat-label">Screenings</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">94%</div>
+                                    <div class="stat-label">Accuracy</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="hero-image-container">
+                                <img src="https://pplx-res.cloudinary.com/image/upload/v1755027151/pplx_project_search_images/7a1e16acce6daf239a5394cbc92841c80f15de46.png" alt="Healthcare Technology Dashboard" class="hero-image">
+                                <div class="hero-overlay">
+                                    <div class="waveform-demo"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Transforming Healthcare with Voice AI</h2>
+                        <p>Our platform combines cutting-edge AI with clinical expertise to provide unprecedented insights into neurological health.</p>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🔍</div>
+                            <h3>Early Detection Technology</h3>
+                            <p>AI analyzes 45+ voice biomarkers to detect neurological changes months before symptoms appear</p>
+                            <ul class="feature-benefits">
+                                <li>94% accuracy</li>
+                                <li>30-second analysis</li>
+                                <li>FDA breakthrough designation</li>
+                            </ul>
+                            <a href="#detect" class="feature-link">Learn more →</a>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">🤝</div>
+                            <h3>Care Team Collaboration</h3>
+                            <p>Seamlessly share insights with doctors, caregivers, and family members</p>
+                            <ul class="feature-benefits">
+                                <li>HIPAA compliant</li>
+                                <li>Real-time updates</li>
+                                <li>Care coordination</li>
+                            </ul>
+                            <a href="#connect" class="feature-link">Learn more →</a>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h3>Personalized Health Insights</h3>
+                            <p>AI-powered recommendations tailored to your unique voice profile and health goals</p>
+                            <ul class="feature-benefits">
+                                <li>Custom exercises</li>
+                                <li>Risk predictions</li>
+                                <li>Wellness coaching</li>
+                            </ul>
+                            <a href="#personalize" class="feature-link">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Proof Section -->
+            <section class="social-proof">
+                <div class="container">
+                    <div class="partners-section">
+                        <h3>Trusted by Leading Healthcare Organizations</h3>
+                        <div class="partners-grid">
+                            <div class="partner-logo">Mayo Clinic</div>
+                            <div class="partner-logo">Stanford Medicine</div>
+                            <div class="partner-logo">NHS Digital</div>
+                            <div class="partner-logo">Kaiser Permanente</div>
+                            <div class="partner-logo">Google Health</div>
+                            <div class="partner-logo">Microsoft AI</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonials">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>What Healthcare Professionals Say</h2>
+                        <p>Real feedback from doctors and patients using NeuroAid in clinical practice.</p>
+                    </div>
+                    
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="stars">★★★★★</div>
+                                <p>"NeuroAid has transformed our early screening process. We're detecting conditions 6 months earlier than traditional methods."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👨‍⚕️</div>
+                                <div class="author-info">
+                                    <div class="author-name">Dr. Michael Chang</div>
+                                    <div class="author-title">Director of Neurology, Johns Hopkins</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="stars">★★★★★</div>
+                                <p>"This technology saved my life. Early detection led to treatment that prevented progression of my condition."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👩</div>
+                                <div class="author-info">
+                                    <div class="author-name">Lisa Thompson</div>
+                                    <div class="author-title">Patient & Advocate</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="stars">★★★★★</div>
+                                <p>"The most promising voice biomarker technology I've seen. We're planning system-wide deployment."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👨‍⚕️</div>
+                                <div class="author-info">
+                                    <div class="author-name">Dr. Robert Kim</div>
+                                    <div class="author-title">Chief Innovation Officer, Cleveland Clinic</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2>Ready to Transform Your Health Journey?</h2>
+                        <p>Join thousands of users and healthcare professionals using NeuroAid for early neurological screening.</p>
+                        <div class="cta-actions">
+                            <button class="btn btn--primary btn--lg" onclick="showPage('demo')">Start Free Trial</button>
+                            <button class="btn btn--outline btn--lg" onclick="showPage('contact')">Contact Sales</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about-page" class="page">
+            <div class="container">
+                <div class="about-hero">
+                    <h1>Democratizing Neurological Health Through AI</h1>
+                    <p class="about-subtitle">Founded in 2024, NeuroAid® Technologies is on a mission to make neurological health screening accessible to everyone through cutting-edge voice analysis technology.</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="company-story">
+                        <h2>Our Story</h2>
+                        <p>NeuroAid was born from the vision of democratizing healthcare through artificial intelligence. Founded by healthcare AI pioneer Suresh Bishnoi, our company emerged from years of research into voice biomarkers and their connection to neurological health.</p>
+                        <p>As a remote-first, globally distributed team of 25-50 experts, we're building the future of preventive healthcare. Our seed-stage company has achieved a $50M valuation while maintaining our focus on clinical excellence and accessibility.</p>
+                    </div>
+
+                    <div class="founder-section">
+                        <h2>Meet Our Founder</h2>
+                        <div class="founder-card">
+                            <div class="founder-avatar">👨‍💼</div>
+                            <div class="founder-info">
+                                <h3>Suresh Bishnoi</h3>
+                                <p class="founder-title">Founder & CEO</p>
+                                <p class="founder-bio">Healthcare AI pioneer with 10+ years in machine learning and medical technology. Previously led AI initiatives at major health systems. MS Computer Science, Healthcare Informatics. 3 pending patents in voice biomarker technology.</p>
+                                <div class="founder-links">
+                                    <a href="mailto:gyanshri68@gmail.com" target="_blank" class="founder-link">✉️ Email</a>
+                                    <a href="https://github.com/SURESHBISHNOI09" target="_blank" class="founder-link">💻 GitHub</a>
+                                    <a href="https://linkedin.com/in/sureshbishnoi09" target="_blank" class="founder-link">💼 LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-section">
+                        <h2>Our Leadership Team</h2>
+                        <div class="team-grid">
+                            <div class="team-card">
+                                <div class="team-avatar">👩‍⚕️</div>
+                                <h4>Dr. Sarah Chen</h4>
+                                <p class="team-title">Chief Medical Officer</p>
+                                <p class="team-background">Neurologist, Mayo Clinic</p>
+                            </div>
+                            <div class="team-card">
+                                <div class="team-avatar">👨‍💻</div>
+                                <h4>Marcus Rodriguez</h4>
+                                <p class="team-title">CTO</p>
+                                <p class="team-background">Former Google Health, MIT PhD</p>
+                            </div>
+                            <div class="team-card">
+                                <div class="team-avatar">👩‍🔬</div>
+                                <h4>Dr. Priya Patel</h4>
+                                <p class="team-title">Head of Clinical Research</p>
+                                <p class="team-background">Stanford Medical AI Lab</p>
+                            </div>
+                            <div class="team-card">
+                                <div class="team-avatar">👨‍💼</div>
+                                <h4>James Wilson</h4>
+                                <p class="team-title">VP Engineering</p>
+                                <p class="team-background">Former Amazon Alexa, Voice AI Expert</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mission-section">
+                        <h2>Mission & Vision</h2>
+                        <div class="mission-grid">
+                            <div class="mission-card">
+                                <h3>🎯 Mission</h3>
+                                <p>To democratize neurological health screening through accessible, AI-powered voice analysis technology that enables early detection and improved patient outcomes.</p>
+                            </div>
+                            <div class="mission-card">
+                                <h3>🔮 Vision</h3>
+                                <p>A world where everyone has access to early neurological health insights, enabling proactive care and preventing progression of devastating conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="awards-section">
+                        <h2>Recognition & Awards</h2>
+                        <div class="awards-grid">
+                            <div class="award-item">🏆 Healthcare Innovation Award 2024</div>
+                            <div class="award-item">🤖 AI Excellence in Medicine 2024</div>
+                            <div class="award-item">💊 Digital Health Breakthrough 2024</div>
+                            <div class="award-item">🏥 Best Medical AI Platform 2024</div>
+                            <div class="award-item">⚡ Fast Company Most Innovative 2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Platform Page -->
+        <div id="platform-page" class="page">
+            <div class="container">
+                <div class="platform-hero">
+                    <h1>Advanced Voice Analysis Platform</h1>
+                    <p class="platform-subtitle">Comprehensive neurological health screening powered by cutting-edge AI and clinical expertise.</p>
+                </div>
+
+                <div class="platform-features">
+                    <div class="platform-feature">
+                        <div class="feature-visual">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1755075359/pplx_project_search_images/5fe04f09c302f4f5c6585cbba466e4a7d0750e88.png" alt="Voice Analysis Waveforms" class="platform-image">
+                        </div>
+                        <div class="feature-content">
+                            <h2>🔍 Early Detection Technology</h2>
+                            <p>Our proprietary AI analyzes 45+ voice biomarkers to detect neurological changes months before traditional symptoms appear. With 94% accuracy and FDA breakthrough designation, NeuroAid represents the future of preventive healthcare.</p>
+                            <ul class="feature-list">
+                                <li>✅ 30-second voice analysis</li>
+                                <li>✅ 45+ voice biomarkers analyzed</li>
+                                <li>✅ 94% clinical accuracy</li>
+                                <li>✅ FDA breakthrough designation</li>
+                                <li>✅ Real-time processing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="platform-feature reverse">
+                        <div class="feature-visual">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1755148140/pplx_project_search_images/27cfb8b96490cae5d23ca2d9ea34b312834370d8.png" alt="Medical Dashboard Interface" class="platform-image">
+                        </div>
+                        <div class="feature-content">
+                            <h2>🤝 Care Team Collaboration</h2>
+                            <p>Seamlessly share insights with healthcare providers, caregivers, and family members through our HIPAA-compliant platform. Enable coordinated care with real-time updates and comprehensive reporting.</p>
+                            <ul class="feature-list">
+                                <li>✅ HIPAA-compliant sharing</li>
+                                <li>✅ Real-time notifications</li>
+                                <li>✅ Comprehensive reports</li>
+                                <li>✅ Multi-user access controls</li>
+                                <li>✅ Care team coordination</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="platform-feature">
+                        <div class="feature-visual">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1754787886/pplx_project_search_images/09a81c16976d1558c6c30bd3e9963d060b053d21.png" alt="Personalized Care Interface" class="platform-image">
+                        </div>
+                        <div class="feature-content">
+                            <h2>🎯 Personalized Health Insights</h2>
+                            <p>AI-powered recommendations tailored to your unique voice profile and health goals. Our platform provides custom voice exercises, risk predictions, and wellness coaching to optimize your neurological health.</p>
+                            <ul class="feature-list">
+                                <li>✅ Personalized voice exercises</li>
+                                <li>✅ Risk prediction modeling</li>
+                                <li>✅ Progress tracking</li>
+                                <li>✅ Wellness coaching</li>
+                                <li>✅ Adaptive recommendations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detect Page -->
+        <div id="detect-page" class="page">
+            <div class="container">
+                <div class="detect-hero">
+                    <h1>🔍 Early Detection Technology</h1>
+                    <p>Revolutionary AI technology that analyzes 45+ voice biomarkers to detect neurological changes months before symptoms appear.</p>
+                </div>
+                
+                <div class="detect-content">
+                    <div class="technology-overview">
+                        <h2>How Our Detection Technology Works</h2>
+                        <div class="tech-grid">
+                            <div class="tech-step">
+                                <div class="step-number">1</div>
+                                <h3>Voice Capture</h3>
+                                <p>30-second voice sample recorded using any device</p>
+                            </div>
+                            <div class="tech-step">
+                                <div class="step-number">2</div>
+                                <h3>AI Analysis</h3>
+                                <p>45+ biomarkers extracted and analyzed in real-time</p>
+                            </div>
+                            <div class="tech-step">
+                                <div class="step-number">3</div>
+                                <h3>Clinical Insights</h3>
+                                <p>Risk assessment with 94% accuracy and confidence scores</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detection-benefits">
+                        <h2>Clinical Benefits</h2>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <div class="benefit-icon">⚡</div>
+                                <h3>Rapid Screening</h3>
+                                <p>Complete neurological screening in just 30 seconds</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">🎯</div>
+                                <h3>High Accuracy</h3>
+                                <p>94% clinical accuracy validated in multiple studies</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">🏥</div>
+                                <h3>Early Detection</h3>
+                                <p>Detect changes 6+ months before traditional methods</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">📱</div>
+                                <h3>Accessible</h3>
+                                <p>Works on any device with a microphone</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Connect Page -->
+        <div id="connect-page" class="page">
+            <div class="container">
+                <div class="connect-hero">
+                    <h1>🤝 Care Team Collaboration</h1>
+                    <p>Seamlessly connect patients, caregivers, and healthcare providers through our secure, HIPAA-compliant platform.</p>
+                </div>
+                
+                <div class="connect-features">
+                    <div class="collaboration-grid">
+                        <div class="collab-card">
+                            <div class="collab-icon">👥</div>
+                            <h3>Multi-User Access</h3>
+                            <p>Secure access controls for patients, caregivers, and healthcare providers</p>
+                        </div>
+                        <div class="collab-card">
+                            <div class="collab-icon">🔒</div>
+                            <h3>HIPAA Compliance</h3>
+                            <p>End-to-end encryption and compliance with healthcare privacy regulations</p>
+                        </div>
+                        <div class="collab-card">
+                            <div class="collab-icon">📊</div>
+                            <h3>Real-time Updates</h3>
+                            <p>Instant notifications and updates for care team members</p>
+                        </div>
+                        <div class="collab-card">
+                            <div class="collab-icon">📋</div>
+                            <h3>Comprehensive Reports</h3>
+                            <p>Detailed analysis reports for clinical decision-making</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personalize Page -->
+        <div id="personalize-page" class="page">
+            <div class="container">
+                <div class="personalize-hero">
+                    <h1>🎯 Personalized Health Insights</h1>
+                    <p>AI-powered recommendations tailored to your unique voice profile and health goals.</p>
+                </div>
+                
+                <div class="personalization-features">
+                    <div class="personal-grid">
+                        <div class="personal-card">
+                            <div class="personal-icon">🎵</div>
+                            <h3>Voice Exercises</h3>
+                            <p>Customized voice therapy exercises based on your specific needs</p>
+                        </div>
+                        <div class="personal-card">
+                            <div class="personal-icon">📈</div>
+                            <h3>Risk Predictions</h3>
+                            <p>Advanced modeling to predict and prevent health deterioration</p>
+                        </div>
+                        <div class="personal-card">
+                            <div class="personal-icon">🧠</div>
+                            <h3>Wellness Coaching</h3>
+                            <p>AI-powered coaching for optimal neurological health</p>
+                        </div>
+                        <div class="personal-card">
+                            <div class="personal-icon">📊</div>
+                            <h3>Progress Tracking</h3>
+                            <p>Comprehensive tracking of your health journey over time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Page -->
+        <div id="pricing-page" class="page">
+            <div class="container">
+                <div class="pricing-hero">
+                    <h1>Choose Your Plan</h1>
+                    <p>Flexible pricing options designed for individuals, professionals, and healthcare organizations.</p>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Personal</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">0</span>
+                                <span class="period">forever</span>
+                            </div>
+                            <p class="pricing-description">Perfect for individual health monitoring</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✅ 5 recordings/month</li>
+                            <li>✅ Basic analysis</li>
+                            <li>✅ Trend tracking</li>
+                            <li>✅ Mobile app</li>
+                        </ul>
+                        <button class="btn btn--outline btn--full-width">Get Started Free</button>
+                    </div>
+                    
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3>Professional</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">29</span>
+                                <span class="period">per month</span>
+                            </div>
+                            <p class="pricing-description">For healthcare professionals and clinics</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✅ Unlimited recordings</li>
+                            <li>✅ Advanced analytics</li>
+                            <li>✅ Care team sharing</li>
+                            <li>✅ API access</li>
+                            <li>✅ Priority support</li>
+                        </ul>
+                        <button class="btn btn--primary btn--full-width">Start Trial</button>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Enterprise</h3>
+                            <div class="price">
+                                <span class="amount">Custom</span>
+                                <span class="period">contact sales</span>
+                            </div>
+                            <p class="pricing-description">For health systems and organizations</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✅ Custom deployment</li>
+                            <li>✅ White-label option</li>
+                            <li>✅ Advanced integrations</li>
+                            <li>✅ Dedicated support</li>
+                            <li>✅ SLA guarantee</li>
+                        </ul>
+                        <button class="btn btn--outline btn--full-width">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Careers Page -->
+        <div id="careers-page" class="page">
+            <div class="container">
+                <div class="careers-hero">
+                    <h1>Join Our Mission</h1>
+                    <p>Help us democratize neurological health through AI. We're building the future of preventive healthcare.</p>
+                </div>
+                
+                <div class="careers-content">
+                    <div class="jobs-grid">
+                        <div class="job-card">
+                            <div class="job-header">
+                                <div class="job-title">Senior ML Engineer - Voice AI</div>
+                                <div class="job-meta">
+                                    <span class="job-department">Engineering</span>
+                                    <span class="job-location">Remote</span>
+                                    <span class="job-type">Full-time</span>
+                                </div>
+                            </div>
+                            <div class="job-salary">$150k - $220k + 0.1% - 0.5% equity</div>
+                            <p class="job-description">Lead development of cutting-edge voice analysis algorithms for neurological screening.</p>
+                            <div class="job-requirements">
+                                <strong>Requirements:</strong>
+                                <ul>
+                                    <li>PhD/MS in ML/AI</li>
+                                    <li>5+ years healthcare AI</li>
+                                    <li>Python/TensorFlow</li>
+                                    <li>Published research</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn--primary">Apply Now</button>
+                        </div>
+                        
+                        <div class="job-card">
+                            <div class="job-header">
+                                <div class="job-title">Clinical Research Scientist</div>
+                                <div class="job-meta">
+                                    <span class="job-department">Research</span>
+                                    <span class="job-location">Remote/Boston</span>
+                                    <span class="job-type">Full-time</span>
+                                </div>
+                            </div>
+                            <div class="job-salary">$120k - $180k + 0.05% - 0.3% equity</div>
+                            <p class="job-description">Design and conduct clinical studies validating voice biomarkers for neurological conditions.</p>
+                            <div class="job-requirements">
+                                <strong>Requirements:</strong>
+                                <ul>
+                                    <li>PhD in Clinical Research</li>
+                                    <li>Neurology experience</li>
+                                    <li>FDA trial experience</li>
+                                    <li>Strong publications</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn--primary">Apply Now</button>
+                        </div>
+                        
+                        <div class="job-card">
+                            <div class="job-header">
+                                <div class="job-title">Senior Product Manager</div>
+                                <div class="job-meta">
+                                    <span class="job-department">Product</span>
+                                    <span class="job-location">Remote/SF</span>
+                                    <span class="job-type">Full-time</span>
+                                </div>
+                            </div>
+                            <div class="job-salary">$130k - $190k + 0.1% - 0.4% equity</div>
+                            <p class="job-description">Drive product strategy for our voice health platform and clinical integrations.</p>
+                            <div class="job-requirements">
+                                <strong>Requirements:</strong>
+                                <ul>
+                                    <li>5+ years healthcare PM</li>
+                                    <li>Technical background</li>
+                                    <li>Clinical workflows</li>
+                                    <li>B2B SaaS</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn--primary">Apply Now</button>
+                        </div>
+                        
+                        <div class="job-card">
+                            <div class="job-header">
+                                <div class="job-title">Senior Frontend Engineer</div>
+                                <div class="job-meta">
+                                    <span class="job-department">Engineering</span>
+                                    <span class="job-location">Remote</span>
+                                    <span class="job-type">Full-time</span>
+                                </div>
+                            </div>
+                            <div class="job-salary">$120k - $170k + 0.05% - 0.3% equity</div>
+                            <p class="job-description">Build beautiful, accessible interfaces for our voice analysis platform.</p>
+                            <div class="job-requirements">
+                                <strong>Requirements:</strong>
+                                <ul>
+                                    <li>React/Next.js expert</li>
+                                    <li>Healthcare UI/UX</li>
+                                    <li>Accessibility focus</li>
+                                    <li>TypeScript</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn--primary">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo Page -->
+        <div id="demo-page" class="page">
+            <div class="container">
+                <div class="demo-hero">
+                    <h1>Try NeuroAid Demo</h1>
+                    <p>Experience our voice analysis technology with a quick 30-second demo.</p>
+                </div>
+                
+                <div class="demo-interface">
+                    <div class="demo-card">
+                        <div class="demo-instructions">
+                            <h3>Demo Instructions</h3>
+                            <ol>
+                                <li>Click the record button below</li>
+                                <li>Read the provided phrase clearly</li>
+                                <li>Wait for AI analysis to complete</li>
+                                <li>Review your personalized results</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="demo-recording">
+                            <div class="phrase-display">
+                                <p>"The quick brown fox jumps over the lazy dog. This pangram helps analyze various speech patterns and voice characteristics for comprehensive neurological screening."</p>
+                            </div>
+                            
+                            <div class="demo-controls">
+                                <button class="demo-record-btn" id="demo-record-btn">
+                                    <span class="record-icon">🎤</span>
+                                    <span class="record-text">Start Demo Recording</span>
+                                </button>
+                                <div class="demo-timer" id="demo-timer">0:30</div>
+                            </div>
+                            
+                            <div class="demo-waveform">
+                                <canvas id="demo-waveform" width="400" height="100"></canvas>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-results hidden" id="demo-results">
+                            <h3>Demo Results</h3>
+                            <div class="demo-score">
+                                <div class="score-circle">
+                                    <span class="score-value" id="demo-score">--</span>
+                                    <span class="score-max">/100</span>
+                                </div>
+                                <p class="score-description">Neurological Health Score</p>
+                            </div>
+                            <div class="demo-features">
+                                <h4>Top Voice Features Analyzed:</h4>
+                                <ul id="demo-features-list">
+                                    <li>Voice Clarity: 87%</li>
+                                    <li>Pitch Stability: 82%</li>
+                                    <li>Voice Energy: 90%</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn--primary" onclick="showPage('home')">Get Full Analysis</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact-page" class="page">
+            <div class="container">
+                <div class="contact-hero">
+                    <h1>Get in Touch</h1>
+                    <p>Ready to transform your healthcare organization? Contact our team today.</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="contact-icon">✉️</div>
+                                    <div class="contact-details">
+                                        <strong>Email</strong>
+                                        <a href="mailto:gyanshri68@gmail.com">gyanshri68@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-method">
+                                    <div class="contact-icon">🌍</div>
+                                    <div class="contact-details">
+                                        <strong>Headquarters</strong>
+                                        <span>Global (Remote-First)</span>
+                                    </div>
+                                </div>
+                                <div class="contact-method">
+                                    <div class="contact-icon">💼</div>
+                                    <div class="contact-details">
+                                        <strong>LinkedIn</strong>
+                                        <a href="https://linkedin.com/in/sureshbishnoi09" target="_blank">sureshbishnoi09</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form">
+                            <h3>Send us a Message</h3>
+                            <form class="form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label">First Name</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Organization</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trademark Page -->
+        <div id="trademark-page" class="page">
+            <div class="container">
+                <div class="trademark-content">
+                    <h1>Trademark & Legal Information</h1>
+                    
+                    <div class="legal-sections">
+                        <div class="legal-section">
+                            <h2>Trademark Notice</h2>
+                            <p>NeuroAid® is a registered trademark of NeuroAid Technologies. All rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of NeuroAid Technologies.</p>
+                        </div>
+                        
+                        <div class="legal-section">
+                            <h2>Medical Disclaimer</h2>
+                            <p>NeuroAid® Technologies provides screening technology for informational purposes only. Our platform is not intended to diagnose, treat, cure, or prevent any disease. Always consult with qualified healthcare professionals for medical advice and treatment decisions.</p>
+                        </div>
+                        
+                        <div class="legal-section">
+                            <h2>Privacy & Compliance</h2>
+                            <p>NeuroAid® Technologies is committed to protecting your privacy and maintaining HIPAA compliance. All voice data is encrypted, processed securely, and handled in accordance with applicable healthcare privacy regulations.</p>
+                        </div>
+                        
+                        <div class="legal-section">
+                            <h2>Intellectual Property</h2>
+                            <p>NeuroAid® Technologies holds multiple patents and pending patent applications related to voice biomarker technology and neurological health screening. Unauthorized use of our intellectual property is strictly prohibited.</p>
+                        </div>
+                        
+                        <div class="legal-section">
+                            <h2>Terms of Service</h2>
+                            <p>By using NeuroAid® services, you agree to our terms of service and privacy policy. Please review our complete terms and conditions for detailed information about your rights and responsibilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resources Page -->
+        <div id="resources-page" class="page">
+            <div class="container">
+                <div class="resources-hero">
+                    <h1>Resources & Insights</h1>
+                    <p>Stay informed about the latest developments in voice biomarker technology and neurological health.</p>
+                </div>
+                
+                <div class="resources-content">
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <div class="resource-category">Blog</div>
+                            <h3>The Future of Voice Biomarkers in Healthcare</h3>
+                            <p>Exploring how voice analysis technology is revolutionizing early disease detection and patient monitoring.</p>
+                            <div class="resource-meta">
+                                <span class="resource-date">August 15, 2024</span>
+                                <span class="resource-author">Dr. Sarah Chen</span>
+                            </div>
+                            <a href="#" class="resource-link">Read More →</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-category">Case Study</div>
+                            <h3>Early Detection Success at Mayo Clinic</h3>
+                            <p>How NeuroAid helped detect neurological conditions 6 months earlier than traditional screening methods.</p>
+                            <div class="resource-meta">
+                                <span class="resource-date">July 28, 2024</span>
+                                <span class="resource-author">Clinical Team</span>
+                            </div>
+                            <a href="#" class="resource-link">Read More →</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-category">Whitepaper</div>
+                            <h3>Voice Biomarkers: Clinical Validation Study</h3>
+                            <p>Comprehensive analysis of our voice biomarker technology's clinical accuracy and effectiveness.</p>
+                            <div class="resource-meta">
+                                <span class="resource-date">June 10, 2024</span>
+                                <span class="resource-author">Research Team</span>
+                            </div>
+                            <a href="#" class="resource-link">Download PDF →</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-category">Press Release</div>
+                            <h3>NeuroAid Receives FDA Breakthrough Designation</h3>
+                            <p>FDA recognizes NeuroAid's voice analysis technology as a breakthrough device for neurological screening.</p>
+                            <div class="resource-meta">
+                                <span class="resource-date">May 22, 2024</span>
+                                <span class="resource-author">Press Team</span>
+                            </div>
+                            <a href="#" class="resource-link">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3>NeuroAid<sup>®</sup></h3>
+                        <p>Democratizing neurological health through AI-powered voice analysis technology.</p>
+                        <div class="footer-social">
+                            <a href="https://github.com/SURESHBISHNOI09" target="_blank" class="social-link">GitHub</a>
+                            <a href="https://linkedin.com/in/sureshbishnoi09" target="_blank" class="social-link">LinkedIn</a>
+                            <a href="mailto:gyanshri68@gmail.com" class="social-link">Email</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Platform</h4>
+                            <a href="#detect">Early Detection</a>
+                            <a href="#connect">Care Collaboration</a>
+                            <a href="#personalize">Personalization</a>
+                            <a href="#demo">Try Demo</a>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4>Company</h4>
+                            <a href="#about">About Us</a>
+                            <a href="#careers">Careers</a>
+                            <a href="#contact">Contact</a>
+                            <a href="#resources">Resources</a>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4>Legal</h4>
+                            <a href="#trademark">Trademark</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                            <a href="#">HIPAA Compliance</a>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4>Support</h4>
+                            <a href="#contact">Help Center</a>
+                            <a href="#">Documentation</a>
+                            <a href="#">API Reference</a>
+                            <a href="#">Status Page</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 NeuroAid® Technologies. All rights reserved.</p>
+                    <p class="footer-disclaimer">This platform provides screening technology for informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
