@@ -100,9 +100,8 @@ pytest
 ---
 
 ## 👥 Contributors
-- **Suresh Bishnoi** – Project Lead, Frontend & Infra  
-- **Team Members** – Backend, ML, Docs  
-
+- **Suresh Bishnoi** – Project Lead, Frontend & Infra, Backend, ML, Docs
+- **Team Members** –   This Project only solo contribution
 ---
 
 ## 📜 License
