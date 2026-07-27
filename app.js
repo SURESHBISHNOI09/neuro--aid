@@ -737,10 +737,10 @@ function showErrorMessage(message) {
     toast.textContent = message;
     toast.style.cssText = `
         position: fixed;
-        top: 20px;
-        right: 20px;
+        top: 40px;
+        right: 40px;
         background: #EF4444;
-        color: white;
+        color: orange;
         padding: 16px 20px;
         border-radius: 8px;
         z-index: 10000;
